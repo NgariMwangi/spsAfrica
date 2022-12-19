@@ -1,3 +1,21 @@
+@media screen and (max-width: 500px) {
+.wid{
+ display: none;
+}
+.ifr{
+  width: 100%;
+}
+
+}
+@media screen and (min-width: 500px) {
+  .smal{
+   display: none;
+  }
+  .ifr{
+    width: 70%;
+  }
+  
+  }
 .w-layout-grid {
   display: -ms-grid;
   display: grid;
@@ -146,6 +164,7 @@ body {
   color: #333;
   font-size: 1vw;
   line-height: 1.2;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -280,7 +299,7 @@ a {
   padding-top: 20em;
   padding-bottom: 20em;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#032832), color-stop(26%, rgba(3, 40, 50, 0))), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url('../images/IMG_5044.JPG');
-  background-image: linear-gradient(0deg, #032832, rgba(3, 40, 50, 0) 26%), linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/IMG_5044.JPG');
+  background-image: linear-gradient(0deg, #032832, rgba(3, 40, 50, 0) 26%), linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/hswitchgear.jpg');
   background-position: 0px 0px, 0px 0px, 50% 50%;
   background-size: auto, auto, cover;
   background-repeat: repeat, repeat, no-repeat;
@@ -976,7 +995,7 @@ a {
 }
 
 .life-at-image-01 {
-  width: 26.3em;
+  width: 17.3em;
   border-radius: 12px;
   -o-object-fit: cover;
   object-fit: cover;
@@ -1201,7 +1220,7 @@ a {
   padding-top: 12em;
   padding-bottom: 18.33em;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#032832), color-stop(76%, rgba(3, 40, 50, 0))), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url('../images/Contact-Page-Min.jpeg');
-  background-image: linear-gradient(0deg, #032832, rgba(3, 40, 50, 0) 76%), linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../images/Contact-Page-Min.jpeg');
+  background-image: linear-gradient(0deg, #032832, rgba(3, 40, 50, 0) 76%), linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('/assets/images/contactbg.jpg');
   background-position: 0px 0px, 0px 0px, 50% 50%;
   background-size: auto, auto, cover;
   background-repeat: repeat, repeat, no-repeat;
@@ -1407,7 +1426,7 @@ a {
   padding-top: 12em;
   padding-bottom: 10em;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#032832), color-stop(76%, rgba(3, 40, 50, 0))), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url('../images/about-banner.jpeg');
-  background-image: linear-gradient(0deg, #032832, rgba(3, 40, 50, 0) 76%), linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../images/about-banner.jpeg');
+  background-image: linear-gradient(0deg, #032832, rgba(3, 40, 50, 0) 76%), linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('/assets/images/contactbg.jpg');
   background-position: 0px 0px, 0px 0px, 50% 60%;
   background-size: auto, auto, cover;
   background-repeat: repeat, repeat, no-repeat;
@@ -3173,7 +3192,7 @@ a {
 }
 
 .section.before-numbers-section {
-  padding-bottom: 12em;
+  padding-bottom: 32em;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(78%, transparent), to(#032832));
   background-image: linear-gradient(180deg, transparent 78%, #032832);
 }
@@ -5638,8 +5657,8 @@ a {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center;
-  background-color: #032832;
+  align-items: top;
+  background-color: rgb(24,24,33);
 }
 
 .loader-lottie {
@@ -6108,7 +6127,7 @@ a {
   -ms-flex-align: center;
   align-items: center;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#032835), color-stop(53%, transparent), color-stop(56%, transparent)), -webkit-gradient(linear, left top, left bottom, from(#032832), color-stop(69%, transparent)), url('../images/Ship.jpg');
-  background-image: linear-gradient(0deg, #032835, transparent 53%, transparent 56%), linear-gradient(180deg, #032832, transparent 69%), url('../images/Ship.jpg');
+  background-image: linear-gradient(0deg, #032835, transparent 53%, transparent 56%), linear-gradient(180deg, #032832, transparent 69%), url('../images/aboutusimg2.jpg');
   background-position: 0px 0px, 0px 0px, 50% 50%;
   background-size: auto, auto, cover;
   background-repeat: repeat, repeat, no-repeat;

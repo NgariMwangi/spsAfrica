@@ -1133,6 +1133,9 @@
   .w-dropdown-list.w--open {
     display: block;
   }
+  .w-dropdown-list.w--open1 {
+    display: flex;
+  }
   .w-dropdown-link {
     padding: 10px 20px;
     display: block;
