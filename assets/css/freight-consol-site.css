@@ -5,7 +5,12 @@
 .ifr{
   width: 100%;
 }
-
+.w-layout-grid{
+  display: bloc !important;
+}
+.ap{
+  font-size: 14px !important;
+}
 }
 @media screen and (min-width: 500px) {
   .smal{
@@ -13,6 +18,9 @@
   }
   .ifr{
     width: 70%;
+  }
+  .ap{
+    font-size: 17px !important;
   }
   
   }
@@ -475,7 +483,7 @@ a {
 }
 
 .text-wrapper.ship-confidently {
-  max-width: 70%;
+  max-width: 100%;
   margin-top: 2em;
 }
 
@@ -1339,7 +1347,7 @@ a {
 .logo3_list {
   display: -ms-grid;
   display: grid;
-  margin-right: 2rem;
+  margin-right: 0rem;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
@@ -2142,7 +2150,7 @@ a {
   padding-top: 20em;
   padding-bottom: 20em;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#032832), color-stop(50%, rgba(3, 40, 50, 0))), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url('../images/Competitive-Advantage.jpg');
-  background-image: linear-gradient(0deg, #032832, rgba(3, 40, 50, 0) 50%), linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../images/Competitive-Advantage.jpg');
+  background-image: linear-gradient(0deg, #032832, rgba(3, 40, 50, 0) 50%), linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('/assets/images/aboutusimg.jpg');
   background-position: 0px 0px, 0px 0px, 50% 80%;
   background-size: auto, auto, cover;
   background-repeat: repeat, repeat, no-repeat;
@@ -2326,7 +2334,7 @@ a {
   -ms-flex-align: center;
   align-items: center;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#032835), color-stop(53%, transparent)), -webkit-gradient(linear, left top, left bottom, from(#032832), to(transparent)), url('../images/CA-CTA.jpg');
-  background-image: linear-gradient(0deg, #032835, transparent 53%), linear-gradient(180deg, #032832, transparent), url('../images/CA-CTA.jpg');
+  background-image: linear-gradient(0deg, #032835, transparent 53%), linear-gradient(180deg, #032832, transparent), url('/assets/images/');
   background-position: 0px 0px, 0px 0px, 50% 50%;
   background-size: auto, auto, cover;
   background-repeat: repeat, repeat, no-repeat;
@@ -6109,7 +6117,7 @@ color: #000;
   padding-top: 8em;
   padding-bottom: 8em;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#032832), color-stop(50%, hsla(0, 0%, 100%, 0))), -webkit-gradient(linear, left top, left bottom, from(#032832), color-stop(57%, transparent)), url('../images/Sea-01.jpeg');
-  background-image: linear-gradient(0deg, #032832, hsla(0, 0%, 100%, 0) 50%), linear-gradient(180deg, #032832, transparent 57%), url('../images/Sea-01.jpeg');
+  background-image: linear-gradient(0deg, #032832, hsla(0, 0%, 100%, 0) 50%), linear-gradient(180deg, #032832, transparent 57%), url('/assets/images/anil-kumar-shrestha-JqYJ7RMGDrk-unsplash.jpg');
   background-position: 0px 0px, 0px 0px, 50% 50%;
   background-size: auto, auto, cover;
   background-repeat: repeat, repeat, no-repeat;
@@ -7713,11 +7721,12 @@ color: #000;
     position: relative;
     padding-top: 35em;
     padding-bottom: 35em;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), to(#032832)), -webkit-gradient(linear, left top, left bottom, from(#032832), color-stop(64%, transparent)), url('../images/scene-02-still.jpg');
-    background-image: linear-gradient(180deg, transparent 50%, #032832), linear-gradient(180deg, #032832, transparent 64%), url('../images/scene-02-still.jpg');
-    background-position: 0px 0px, 0px 0px, 50% 50%;
-    background-size: auto, auto, cover;
-    background-repeat: repeat, repeat, no-repeat;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), to(#032832)), -webkit-gradient(linear, left top, left bottom, from(#032832), color-stop(64%, transparent)), url('/assets/images/anil-kumar-shrestha-JqYJ7RMGDrk-unsplash.jpg');
+    background-image: linear-gradient(180deg, transparent 50%, #032832), linear-gradient(180deg, #032832, transparent 64%), url('/assets/images/anil-kumar-shrestha-JqYJ7RMGDrk-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat:  no-repeat;
+    ba
   }
 
   .stone {
@@ -7768,7 +7777,7 @@ color: #000;
     padding-top: 22em;
     padding-bottom: 22em;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(74%, transparent), to(#032832)), -webkit-gradient(linear, left top, left bottom, from(#032832), color-stop(53%, transparent)), url('../images/scene-03-still.jpg');
-    background-image: linear-gradient(180deg, transparent 74%, #032832), linear-gradient(180deg, #032832, transparent 53%), url('../images/scene-03-still.jpg');
+    background-image: linear-gradient(180deg, transparent 74%, #032832), linear-gradient(180deg, #032832, transparent 53%), url('/assets/images/sps_hero_mobile_bg2.jpg');
     background-position: 0px 0px, 0px 0px, 50% 50%;
     background-size: auto, auto, cover;
     background-repeat: repeat, repeat, no-repeat;
@@ -8881,7 +8890,7 @@ color: #000;
   }
 
   .l-hero-section.chage {
-    height: 163em;
+    height: 135em;
     padding-top: 42em;
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(40%, transparent), to(#032832));
     background-image: linear-gradient(0deg, transparent 40%, #032832);

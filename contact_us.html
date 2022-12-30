@@ -29,6 +29,126 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
   <meta name="format-detection" content="telephone=no">
+  <style>
+    .animation-element {
+      opacity: 0;
+      position: relative;
+    }
+
+    /*animation element sliding left*/
+
+    .animation-element.slide-left {
+      opacity: 0;
+      -moz-transition: all 500ms linear;
+      -webkit-transition: all 500ms linear;
+      -o-transition: all 500ms linear;
+      transition: all 500ms linear;
+      -moz-transform: translate3d(-100px, 0px, 0px);
+      -webkit-transform: translate3d(-100px, 0px, 0px);
+      -o-transform: translate(-100px, 0px);
+      -ms-transform: translate(-100px, 0px);
+      transform: translate3d(-100px, 0px, 0px);
+    }
+
+    .animation-element.slide-left.in-view {
+      opacity: 1;
+      -moz-transform: translate3d(0px, 0px, 0px);
+      -webkit-transform: translate3d(0px, 0px, 0px);
+      -o-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+      transform: translate3d(0px, 0px, 0px);
+    }
+
+    /*animation slide left styled for testimonials*/
+
+    .animation-element.slide-left.testimonial {
+      float: left;
+      width: 47%;
+      margin: 0% 1.5% 3% 1.5%;
+      background: #F5F5F5;
+      padding: 15px;
+      box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+      border: solid 1px #EAEAEA;
+    }
+
+    .animation-element.slide-left.testimonial:hover,
+    .animation-element.slide-left.testimonial:active {
+      box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .animation-element.slide-left.testimonial:nth-of-type(odd) {
+      width: 48.5%;
+      margin: 0% 1.5% 3.0% 0%;
+    }
+
+    .animation-element.slide-left.testimonial:nth-of-type(even) {
+      width: 48.5%;
+      margin: 0% 0% 3.0% 1.5%;
+    }
+
+    .animation-element.slide-left.testimonial .header {
+      float: left;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .animation-element.slide-left.testimonial .left {
+      float: left;
+      margin-right: 15px;
+    }
+
+    .animation-element.slide-left.testimonial .right {
+      float: left;
+    }
+
+    .animation-element.slide-left.testimonial img {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      box-shadow: 0px 1px 3px rgba(51, 51, 51, 0.5);
+    }
+
+    .animation-element.slide-left.testimonial h3 {
+      margin: 0px 0px 5px 0px;
+    }
+
+    .animation-element.slide-left.testimonial h4 {
+      margin: 0px 0px 5px 0px;
+    }
+
+    .animation-element.slide-left.testimonial .content {
+      float: left;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    /* .animation-element.slide-left.testimonial .rating {} */
+
+    .animation-element.slide-left.testimonial i {
+      color: #aaa;
+      margin-right: 5px;
+    }
+
+    /*media queries for small devices*/
+    @media screen and (max-width: 678px) {
+
+      /*testimonials*/
+      .animation-element.slide-left.testimonial,
+      .animation-element.slide-left.testimonial:nth-of-type(odd),
+      .animation-element.slide-left.testimonial:nth-of-type(even) {
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+      }
+
+      .animation-element.slide-left.testimonial .right,
+      .animation-element.slide-left.testimonial .left,
+      .animation-element.slide-left.testimonial .content,
+      .animation-element.slide-left.testimonial .rating {
+        text-align: center;
+        float: none;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="page-wrapper">
@@ -40,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <ul  class="jjj" style="z-index: 1; padding-top: 30px;">
       <li ><a href='/index.html'>Home</a></li>
       <li><a href='/about-us.html'>About Us</a></li>
-      <li><a href='#'>Projects</a>
+      <li><a href='/projects.html'>Projects</a>
          <ul>
             <li><a href='#'>Residential</a>
             </li>
@@ -108,12 +228,24 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>
     <div class="main-wrapper">
       <div class="contact-hero-section wf-section">
-        <div class="container medium w-container">
+        <div class="container medium w-container" style="background-color: rgba(49,57,95, 0.6); border-radius: 5px; padding: 10px; ">
           <div class="margin-bottom margin-small">
-            <h1 class="heading-xxlarge text-color-white" style="color: rgb(214,45,40);">Contact us<br></h1>
+            <div class="animation-element slide-left">
+              <h1 class="heading-xxlarge text-color-white" style="color: rgb(214,45,40);">Contact us<br></h1>
+
+
+            </div>
+         
           </div>
           <div class="text-wrapper max-width-medium-para-wrapper">
-            <p class="para-01 text-color-white">Every requirement is unique in its own way. Tell us about yours and we’ll get in touch with you.<br></p>
+            <div class="animation-element slide-left">
+              <p id="mypara" class="para-01 text-color-white home-hero-para"
+              style="font-weight: 700; font-size: 16px; margin: 0px;">
+            </p>
+              
+
+            </div>
+          
           </div>
         </div>
       </div>
@@ -130,11 +262,11 @@ document.addEventListener("DOMContentLoaded", function() {
                   </div>
                   <div id="w-node-_3757fd1a-fc72-dd69-f381-93f83b24d56e-d5c47d15" class="grid-col-wrapper">
                     <div class="text-wrapper">
-                      <h4 class="heading-small text-color-white">Find us at:</h4>
+                      <h4 class="heading-small text-color-white">Find <span style="color: red;">us</span> at:</h4>
                     </div>
                     <div class="text-wrapper">
                       <p class="para-01 text-color-white">SPS Lane, off Melili road
-                    , <br>Nairobi, Kenya.<br></p>
+                    , <br> <span style="color: red;">Nairobi</span>, Kenya.<br></p>
                     </div>
                     <iframe class="ifr"  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.121915187432!2d36.8314261!3d-1.3068809!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4927b77c4161ee89!2sSpecialised%20Power%20Systems%20Ltd!5e0!3m2!1sen!2ske!4v1669147231191!5m2!1sen!2ske"  height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
                   </div>
@@ -146,15 +278,15 @@ document.addEventListener("DOMContentLoaded", function() {
                     <div class="text-wrapper">
                        
                       <a href="mailto:info@freightconsol.com" class="link-block email-link w-inline-block">
-                        <div class="link-text small-case">info@spsafrica.com  </div> <br>
+                        <div class="link-text small-case">info@<span style="color: red;">spsafrica</span>.com  </div> <br>
                         
                       </a>
-                      <a href="tel:+254(0) 724 255298" style="color: rgb(214,45,40); font-size: 15px; font-weight: 700;">+254(0) 724 255298</a>
+                      <a href="tel:+254(0) 724 255298" style="color: white; font-size: 15px; font-weight: 700;">+254(0) 724 255298</a>
                     </div>
                   </div>
                   <div id="w-node-cb996ce7-7105-d38b-9f6f-5f5a93c5b2d0-d5c47d15" class="grid-col-wrapper">
                     <div class="text-wrapper fill-out-form-wrapper">
-                      <div class="para-01 text-color-white">or just fill out the contact form</div>
+                      <div class="para-01 text-color-white">or just fill out the <span style="color: red;">contact form</span></div>
                     </div>
                   </div>
                 </div>
@@ -182,6 +314,13 @@ document.addEventListener("DOMContentLoaded", function() {
       </div>
       
       <section class="section-logo3">
+        
+       <div style="text-align:center; margin-bottom: 10px; padding-bottom: 20px;" > 
+        <div class="animation-element slide-left">
+          <h2 class="heading-large" style="color: white; padding-bottom: 10px">Our <span style="color: red;">Partners</span></h2>
+
+      </div>
+         </div>
         <div class="container medium marquee-container w-container">
           <div class="card maquee-card contact-marquee">
             <div data-w-id="14f1c4c5-1bfd-37cd-9f91-a60b09c2ac5b" class="logo3_component">
@@ -225,7 +364,13 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>
     
     <div  style="width: 100%; height:100vh; display: flex; align-items: center; justify-content: center; flex-direction: column;" class="map">
-        <h1 class="h1" style="color: rgb(220,51,42); font-size: 30px;">Our Location Map</h1>
+
+        <div class="animation-element slide-left">
+          <h1 class="h1" style="color: rgb(220,51,42); font-size: 30px;">Our Location Map</h1>
+
+
+        </div>
+       
         <iframe class="ifr"  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.121915187432!2d36.8314261!3d-1.3068809!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4927b77c4161ee89!2sSpecialised%20Power%20Systems%20Ltd!5e0!3m2!1sen!2ske!4v1669147231191!5m2!1sen!2ske"  height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
       </div>
     <div class="section l-footer wf-section">
@@ -266,7 +411,7 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
               <div class="w-layout-grid _2-col-grid footer-links-outer-grid">
                 <div id="w-node-a67de4ab-3d84-c5d0-769f-25667a60cba4-1927103b" class="grid-col-wrapper">
-                  <div class="fotoer-quote bigger" style="color: rgb(220,51,42);">World Class <br>Power Solutions.</div>
+                  <div class="fotoer-quote bigger">World Class <br><span style="color: rgb(214,45,40)">Power</span> Solutions.</div>
                   <h1 style="font-size: 20px;">CERTIFIED ISO STANDARDS</h1>
                   <img src="/assets/images/sps_iso_certificate.jpg" alt="" width="250" height="80">
                 </div>
@@ -366,6 +511,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <script src="assets/js/freight-consol-site.js" type="text/javascript"></script>
   <script src="/assets/js/navbar.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="/assets/js/animationcontact.js"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
 </body>
 </html>
