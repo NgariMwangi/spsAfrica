@@ -8,8 +8,8 @@ nav{position:relative;width:980px;margin:0 auto; z-index: 1}
 #cssmenu:after,#cssmenu > ul:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
 #cssmenu #head-mobile{display:none}
 #cssmenu{font-family:sans-serif;background:transparent}
-#cssmenu > ul > li{float:left;z-index: 1;margin-inline: 2px;}
-#cssmenu > ul > li > a{padding:17px;font-size:12px;letter-spacing:1px;text-decoration:none;color:rgb(255,255,255);font-weight:700; }
+#cssmenu > ul > li{float:left;z-index: 1;margin-inline: 15px;}
+#cssmenu > ul > li > a{padding:17px;font-size:14px;letter-spacing:1px;text-decoration:none;color:rgb(255,255,255);font-weight:700; }
 #cssmenu > ul > li:hover > a,#cssmenu ul li.active a{color:#fff}
 #cssmenu > ul > li:hover,#cssmenu ul li.active:hover,#cssmenu ul li.active,#cssmenu ul li.has-sub.active:hover{background:#db2822!important;-webkit-transition:background .3s ease;-ms-transition:background .3s ease;transition:background .3s ease; border-radius: 5px;}
 #cssmenu > ul > li.has-sub > a{padding-right:30px}
@@ -42,9 +42,14 @@ ul{
     ul{
         padding-left: 0px;
     }
+    #cssmenu > ul > li{
+        margin-inline: 2px;
+
+    }
 .jjj{
     padding-top: 55px !important;
 }
+
 .button1{
     background-color: transparent;
 }

@@ -42,17 +42,17 @@ $(document).ready(function () {
   });
   
   
-  var text = 'We partnered with Efacec, a company that focuses on the international market, as well as its continuous investment in innovation and new technologies.';
+  // var text = '';
   
-  var chars = text.split('');
-  var container = document.getElementById("mypara");
+  // var chars = text.split('');
+  // var container = document.getElementById("mypara");
   
-  var i = 0;
-  setInterval(function () {
-    if (i < chars.length) {
-      container.innerHTML += chars[i++];
-    } else {
-      i = 0;
-      container.innerHTML = "";
-    }
-  }, 100);
+  // var i = 0;
+  // setInterval(function () {
+  //   if (i < chars.length) {
+  //     container.innerHTML += chars[i++];
+  //   } else {
+  //     i = 0;
+  //     container.innerHTML = "";
+  //   }
+  // }, 100);

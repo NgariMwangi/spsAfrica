@@ -1,3 +1,33 @@
+@media screen and (max-width: 920px) {
+  .con-link{
+    display: block;
+    margin-left:0px !important;
+    padding:8px 5px;
+  }
+  .card-text1{
+    background-color: rgba(49,57,95, 0.6); 
+    color:#F5F5F5; 
+    padding:10px;
+    font-size:3.5px !important;
+  }
+}
+@media only screen and (max-width: 1000px) and (min-width: 660px)  {
+  .card-text1{
+    background-color: rgba(49,57,95, 0.6); 
+    color:#F5F5F5; 
+    padding:10px;
+    font-size:7.5px !important;
+  }
+}
+@media only screen and (max-width: 590px) and (min-width: 501px)  {
+  .card-text1{
+    background-color: rgba(49,57,95, 0.6); 
+    color:#F5F5F5; 
+    padding:10px;
+    font-size:6.5px !important;
+  }
+}
+
 @media screen and (max-width: 500px) {
 .wid{
  display: none;
@@ -11,18 +41,30 @@
 .ap{
   font-size: 14px !important;
 }
+.box-height{
+  height:175px
+}
+
 }
 @media screen and (min-width: 500px) {
   .smal{
    display: none;
   }
   .ifr{
-    width: 70%;
+    width: 95%;
   }
   .ap{
     font-size: 17px !important;
   }
-  
+  .box-height{
+    height:160px
+  }
+  .card-text1{
+    background-color: rgba(49,57,95, 0.6); 
+    color:#F5F5F5; 
+    padding:10px;
+    font-size:14px;
+  }
   }
 
 .w-layout-grid {
@@ -399,7 +441,7 @@ a {
 }
 
 .text-wrapper.max-width-medium-para-wrapper {
-  max-width: 41%;
+  max-width: 65%;
 }
 
 .text-wrapper.open-positions-wrapper {
@@ -835,9 +877,9 @@ a {
 }
 
 ._2-col-grid.contact-form-grid {
-  grid-column-gap: 5.5em;
+  grid-column-gap: 2.5em;
   -ms-grid-columns: 0.75fr 1.25fr;
-  grid-template-columns: 0.75fr 1.25fr;
+  grid-template-columns: 1.65fr 1.25fr;
 }
 
 ._2-col-grid.contact-field-col {
@@ -1173,7 +1215,8 @@ a {
   margin-bottom: 1em;
   padding: 3.6em 2.6em 7.1em;
   background-image: url('../images/Operations.png');
-  background-position: 50% 150px;
+  /* background-position: 50% 150px; */
+  position:center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11779,8 +11822,10 @@ color: #000;
   margin-bottom: 40px;
 }
 .iframe{
-  width: 70%;
-  height: 500px;
+  width: 60%;
+  height: 700px;
+  display: inline-block;
+  margin-left: 50px;
 }
 .iframe-m{
   

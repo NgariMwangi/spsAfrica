@@ -42,17 +42,17 @@ $(document).ready(function () {
   });
   
   
-  var text = 'With over two decades of experience, Specialised Power Systems Limited has grown from strength to strength, building a reputation founded on excellence.';
+  // var text = 'With over two decades of experience, Specialised Power Systems Limited has grown from strength to strength, building a reputation founded on excellence.';
   
-  var chars = text.split('');
-  var container = document.getElementById("mypara");
+  // var chars = text.split('');
+  // var container = document.getElementById("mypara");
   
-  var i = 0;
-  setInterval(function () {
-    if (i < chars.length) {
-      container.innerHTML += chars[i++];
-    } else {
-      i = 0;
-      container.innerHTML = "";
-    }
-  }, 130);
+  // var i = 0;
+  // setInterval(function () {
+  //   if (i < chars.length) {
+  //     container.innerHTML += chars[i++];
+  //   } else {
+  //     i = 0;
+  //     container.innerHTML = "";
+  //   }
+  // }, 130);

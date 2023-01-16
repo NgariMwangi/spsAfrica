@@ -42,17 +42,17 @@ $(document).ready(function () {
   });
   
   
-  var text = 'Every requirement is unique in its own way. Tell us about yours and we’ll get in touch with you.';
+  // var text = '';
   
-  var chars = text.split('');
-  var container = document.getElementById("mypara");
+  // var chars = text.split('');
+  // var container = document.getElementById("mypara");
   
-  var i = 0;
-  setInterval(function () {
-    if (i < chars.length) {
-      container.innerHTML += chars[i++];
-    } else {
-      i = 0;
-      container.innerHTML = "";
-    }
-  }, 130);
+  // var i = 0;
+  // setInterval(function () {
+  //   if (i < chars.length) {
+  //     container.innerHTML += chars[i++];
+  //   } else {
+  //     i = 0;
+  //     container.innerHTML = "";
+  //   }
+  // }, 130);

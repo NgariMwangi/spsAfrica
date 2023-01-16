@@ -42,17 +42,17 @@ $(document).ready(function () {
   });
   
   
-  var text = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic eos dolor quidem similique veritatis soluta reiciendis dolorem saepe, perferendis inventore amet ab eaque esse non necessitatibus fuga nostrum quo molestias numquam, voluptatum fugiat? Fuga laboriosam tempore corporis enim pariatur harum minima voluptate qui.';
+  // var text = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic eos dolor quidem similique veritatis soluta reiciendis dolorem saepe, perferendis inventore amet ab eaque esse non necessitatibus fuga nostrum quo molestias numquam, voluptatum fugiat? Fuga laboriosam tempore corporis enim pariatur harum minima voluptate qui.';
   
-  var chars = text.split('');
-  var container = document.getElementById("mypara");
+  // var chars = text.split('');
+  // var container = document.getElementById("mypara");
   
-  var i = 0;
-  setInterval(function () {
-    if (i < chars.length) {
-      container.innerHTML += chars[i++];
-    } else {
-      i = 0;
-      container.innerHTML = "";
-    }
-  }, 100);
+  // var i = 0;
+  // setInterval(function () {
+  //   if (i < chars.length) {
+  //     container.innerHTML += chars[i++];
+  //   } else {
+  //     i = 0;
+  //     container.innerHTML = "";
+  //   }
+  // }, 100);

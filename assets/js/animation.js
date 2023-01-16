@@ -42,17 +42,17 @@ $(document).ready(function () {
 });
 
 
-var text = 'We pride ourselves for continuously providing our customers with world class power solutions to the East African market. We power brighter future.';
+// var text = 'We pride ourselves for continuously providing our customers with world class power solutions to the East African market. We power brighter future.';
 
-var chars = text.split('');
-var container = document.getElementById("mypara");
+// var chars = text.split('');
+// var container = document.getElementById("mypara");
 
-var i = 0;
-setInterval(function () {
-  if (i < chars.length) {
-    container.innerHTML += chars[i++];
-  } else {
-    i = 0;
-    container.innerHTML = "";
-  }
-}, 100);
+// var i = 0;
+// setInterval(function () {
+//   if (i < chars.length) {
+//     container.innerHTML += chars[i++];
+//   } else {
+//     i = 0;
+//     container.innerHTML = "";
+//   }
+// }, 100);
