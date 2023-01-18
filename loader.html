@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #loading-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #f3f3f3;
+  z-index: 9999;
+}
+
+#progress {
+  height: 100%;
+  background-color: #4caf50;
+  width: 0;
+}
+
+#percentage {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  background-color: #f3f3f3;
+  padding: 0 10px;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    <div id="loading-bar">
+        <div id="progress"></div>
+        <div id="percentage"></div>
+      </div>
+      
+      <script>
+      $(window).on("load", function() {
+        var $loading = $("#loading-bar").hide();
+        $(document)
+          .ajaxStart(function() {
+            $loading.show();
+          })
+          .ajaxStop(function() {
+            $loading.hide();
+          });
+      });
+      </script>
+      
+</body>
+</html>
