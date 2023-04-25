@@ -44,7 +44,9 @@
 .box-height{
   height:175px
 }
-
+.smallh{
+  font-size: 30px !important;
+}
 }
 @media screen and (min-width: 500px) {
   .smal{
@@ -1478,7 +1480,7 @@ a {
   padding-top: 12em;
   padding-bottom: 10em;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#032832), color-stop(76%, rgba(3, 40, 50, 0))), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url('../images/about-banner.jpeg');
-  background-image: linear-gradient(0deg, #032832, rgba(3, 40, 50, 0) 76%), linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('/assets/images/contactbg.jpg');
+  background-image: linear-gradient(0deg, #032832, rgba(3, 40, 50, 0) 76%), linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('/assets/images/img_aftersales.jpg');
   background-position: 0px 0px, 0px 0px, 50% 60%;
   background-size: auto, auto, cover;
   background-repeat: repeat, repeat, no-repeat;
@@ -3312,11 +3314,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   width: 80%;
-  height: 100vh;
+ 
   max-width: 1400px;
   margin-right: auto;
   margin-left: auto;
-  padding: 6em 0em;
+  padding: 3em 0em;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -8062,6 +8064,7 @@ color: #000;
 
   .container.medium {
     max-width: 77em;
+    margin-top: 27px;
   }
 
   .container.medium.l-container {
