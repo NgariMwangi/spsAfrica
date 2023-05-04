@@ -1,9 +1,9 @@
 *{margin:0;padding:0;text-decoration:none}
 
-header{position:fixed; width:100%;background:rgba(0,0,0,0.5); top: 0; left: 0; z-index: 1;}
+header{position:fixed; width:100%;background:rgba(0,0,0,0.3); top: 0; left: 0; z-index: 1;}
 .logo{position:relative;z-index:123;padding:0px;font:18px verdana;color:#6DDB07;float:left;width:34%;z-index: 1}
 .logo a{color:#6DDB07;}
-nav{position:relative;width:980px;margin:0 auto; z-index: 1}
+/* nav{position:relative;width:980px;margin:0 auto; z-index: 1} */
 #cssmenu,#cssmenu ul,#cssmenu ul li,#cssmenu ul li a,#cssmenu #head-mobile{border:0;list-style:none;line-height:1;display:block;position:relative;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 #cssmenu:after,#cssmenu > ul:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
 #cssmenu #head-mobile{display:none}
